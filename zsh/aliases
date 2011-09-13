@@ -1,0 +1,51 @@
+# cd
+alias ..='cd ..'
+
+# ls
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'
+
+# git
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+
+# rails
+alias sc='script/console'
+alias ss='script/server'
+alias sg='script/generate'
+alias a='autotest -rails'
+alias tlog='tail -f log/development.log'
+alias scaffold='script/generate nifty_scaffold'
+alias migrate='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+
+alias cdrails='cd /Volumes/Data/ProjectsRails/'
+
+alias s.reklama='ssh expre203@75.125.46.201'
+alias s.discount='ssh discount@178.79.128.72'
+alias s.allcode='ssh lunsh144@75.125.46.201'
+alias s.grand='ssh esolovyov@grandinvest.org'
+alias s.story='ssh storyful@173.255.231.249'
+
+hash -d data=/Volumes/Data\ HD/
+hash -d itunes=/Volumes/Data\ HD/Music/iTunes\ Music/
+
+# commands starting with % for pasting from web
+alias %=' '
+
+
+alias freemem='sudo du -sx /'
+
+alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
+
+alias ctags='ctags -R .'
